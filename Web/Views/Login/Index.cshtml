@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/login.css")
+    @Scripts.Render("~/Scripts/bootstrap")
+
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Signin", "Login", FormMethod.Post, new { @class = "form-signin" }))
+        { 
+            <h2 class="form-signin-heading">MSMQ Manager</h2>
+            
+            <label class="control-label" for="username">Login</label>
+            @Html.TextBox("username", null, new { @class = "input-block-level" })
+            <label class="control-label" for="password">Password</label>
+            @Html.Password("password", null, new { @class = "input-block-level" })
+
+            <label class="checkbox">
+                <input type="checkbox" name="remember" value="remember-me">
+                Remember me
+            </label>
+            
+            <button class="btn" type="submit">Sign in</button>
+        }
+    </div>
+</body>
+</html>
