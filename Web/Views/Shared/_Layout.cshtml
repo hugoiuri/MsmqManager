@@ -13,8 +13,10 @@
     @Scripts.Render("~/Scripts/jquery.tablesorter")
 </head>
 <body>
-    @RenderBody()
-    
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

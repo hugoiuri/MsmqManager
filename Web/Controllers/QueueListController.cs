@@ -9,9 +9,6 @@ namespace MsmqManager.Web.Controllers
 {
     public class QueueListController : Controller
     {
-        //
-        // GET: /QueueList/
-
         public ActionResult Index()
         {
             List<QueueModel> model = new List<QueueModel>();
@@ -37,6 +34,12 @@ namespace MsmqManager.Web.Controllers
             model.Add(new QueueModel("dfgsjkgbsdkfj çkb", 0));
 
             return View(model);
+        }
+
+        public ActionResult Details(string name)
+        {
+
+            return View();
         }
     }
 }

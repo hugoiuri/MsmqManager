@@ -62,5 +62,25 @@ textarea {
 
 .queueEmpty
 {
-    color: #A09C96;
+    color: #999;
+}
+
+.tablesorter-header 
+{
+	background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+	background-position: center right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.headerSortUp, .tablesorter-headerSortUp, .tablesorter-headerAsc 
+{
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+
+.headerSortDown, .tablesorter-headerSortDown, .tablesorter-headerDesc 
+{
+	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+.sorter-false {
+	background-image: none;
 }
